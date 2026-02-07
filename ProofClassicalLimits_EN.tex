@@ -1,0 +1,141 @@
+% On the Limits of the Classical Foundation and the Legitimacy of Alternatives
+% Compile: pdflatex ProofClassicalLimits_EN.tex (or latexmk)
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry,hyperref,enumitem,booktabs}
+\geometry{margin=2.5cm}
+
+\title{\textbf{On the Limits of the Classical Foundation and the Legitimacy of Alternatives}\\[0.5em]\large A Rigorous Case Based on G\"odel, Tarski, and Independence}
+\author{RiemannObserver Project}
+\date{Third revision, February 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Without claiming that Peano Arithmetic or ZFC is inconsistent, and without denying that ``2 is prime'' is a theorem under the classical definition, we use established metamathematical results (G\"odel's first and second incompleteness theorems, Tarski's undefinability of truth, independence phenomena) to show: the classical mathematical foundation cannot prove its own consistency and cannot capture all mathematical truth; the claims that ``the classical foundation is the only correct one'' and that ``2 must be prime in any correct mathematics'' are not logically tenable. Foundation replacement (e.g., the Molt framework) is logically legitimate. The core argument (\S1--\S4) is independent of the consistency of Molt; the effectiveness of Molt as a concrete example depends on its consistency (currently unproven).
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Clarifying What Is Being Challenged}
+
+\begin{itemize}[leftmargin=*]
+  \item We \textbf{do not} claim that PA or ZFC is inconsistent.
+  \item We \textbf{do not} claim that ``2 is not prime'' under the classical definition (under that definition, ``2 is prime'' is a theorem and is not being challenged).
+  \item We \textbf{do not} claim that Molt ``proves'' the classical system ``wrong''; Molt and the classical system can coexist as alternative perspectives.
+  \item We \textbf{do} argue that: (1) the classical system cannot prove its own consistency within the system; (2) the classical system is incomplete, and truth and provability cannot be identified within the system; (3) ``2 is prime'' is a theorem in the classical setting, while in Molt the integer 2 is not in $\mathbb{P}_\mathcal{M}$---the two formulations do not conflict logically (they use different predicates); (4) therefore ``the classical foundation is the only correct one'' and ``2 must be prime in any correct mathematics'' are dogmas that can be challenged; foundation replacement is logically legitimate.
+\end{itemize}
+
+\section{G\"odel's First Incompleteness Theorem}
+
+\subsection{Statement}
+Let $T$ be a recursively axiomatized, consistent formal system containing enough arithmetic (e.g., Robinson arithmetic Q or Peano Arithmetic PA). Then there exists a sentence $G_T$ such that: $G_T$ is true in the standard model of $T$; $T \not\vdash G_T$ and $T \not\vdash \neg G_T$. For PA, ZFC, etc., if consistent they are necessarily incomplete.
+
+\subsection{Conclusion}
+The classical system cannot capture all arithmetic truth; the claim that it is the ``unique foundation of truth'' has no logical support.
+
+\textbf{Important caveat}: G\"odel's theorem concerns undecidable propositions. The truth value of theorems provable in PA (such as ``2 is prime'') is not affected by incompleteness. This paper does not use G\"odel to change the truth value of any provable proposition.
+
+\textbf{Conclusion 1}: The classical system cannot be defended as the ``only correct'' or ``truth-capturing'' foundation.
+
+\section{G\"odel's Second Incompleteness Theorem}
+
+\subsection{Statement}
+If $T$ is consistent, then $T \not\vdash \mathrm{Con}(T)$. That is, the classical system cannot prove its own consistency.
+
+\subsection{Implication for ``Absolute Correctness''}
+``The classical system is absolutely correct'' would require at least ``the classical system is consistent,'' but this consistency cannot be proved within the classical system. Hence the claim has no in-system epistemological basis.
+
+\textbf{On the notion of ``absolute correctness''}: The notion is philosophically contested. We adopt a minimal requirement: if a system claims to be ``absolutely correct,'' it should at least be able to defend its own consistency internally. G\"odel's second theorem shows that, in the sense of internal logical grounds, the classical system cannot provide a proof of its ``absolute correctness.'' This is not to say the classical system is ``wrong,'' but that regarding it as the ``unique absolutely correct foundation'' lacks in-system logical grounds---it is a belief, not a proved fact.
+
+\textbf{Conclusion 2}: The ``absolute correctness'' of the classical system cannot be proved within itself; treating it as the only foundation is dogma.
+
+\section{Tarski's Undefinability of Truth}
+
+``Truth'' cannot be consistently defined within $T$ itself; truth and provability cannot be identified within the system. Hence ``provability in the classical system equals mathematical truth'' does not hold.
+
+\textbf{Conclusion 3}: The classical system cannot be equated with the totality or the unique standard of mathematical truth.
+
+\section{Independence Phenomena}
+
+\subsection{Facts}
+CH is independent of ZFC; both ZFC+CH and ZFC+$\neg$CH can be consistent. AC is independent of ZF. Many statements are independent of ZFC.
+
+\subsection{Logical Analysis of ``Unique Correct Foundation''}
+If ``the classical system'' were to be the ``unique correct foundation,'' it would have to determine the truth or falsity of all mathematical propositions. But: (1) ZFC is incomplete (CH is independent); (2) one must choose an extension (ZFC+CH or ZFC+$\neg$CH); (3) multiple extensions can be consistent; (4) even with ZFC as the core, ``the classical system'' cannot be uniquely identified. So logically there is no ``unique correct mathematical foundation''; axiom choice is a stance; foundation replacement is on the same logical level as choosing CH vs.\ $\neg$CH, and is legitimate.
+
+\textbf{Conclusion 4}: The claim that ``the classical system'' is the unique foundation is logically untenable.
+
+\section{The Conventionality and Definition-Relativity of ``2 Is Prime''}
+
+\subsection{Classical facts}
+Under PA and the usual definition of prime, ``2 is prime'' is a theorem. This must be acknowledged; otherwise rigor is lost.
+
+\subsection{Conventionality}
+``Prime'' is a definition within a formal system; different systems can assign it different roles. In Molt: metric $\mu=2$, metric subspace $\mathbb{M}$, $\mathcal{M}$-irreducible, $\mathbb{P}_\mathcal{M}=\{3,5,7,\ldots\}$. So 2 not belonging to $\mathbb{P}_\mathcal{M}$ follows from definitions and axioms.
+
+\subsection{No contradiction between the two formulations}
+Classical: ``2 is prime'' (classical predicate). Molt: ``2 $\notin \mathbb{P}_\mathcal{M}$'' (Molt predicate). Different predicates, logically fully compatible.
+
+\subsection{The dogma being challenged}
+The dogma: ``In any correct mathematics, 2 must be prime'' (universal necessity). We strictly distinguish: under the classical definition ``2 is prime'' is a theorem---we do not challenge that; we challenge the dogma. Argument: (1) ``Correct mathematics'' is not unique (\S1--\S4); (2) In Molt, 2 is legitimately excluded from $\mathbb{P}_\mathcal{M}$, without circularity; consistency is unproven but there is no known contradiction; (3) So ``2 must be prime'' cannot be elevated to a necessary consequence of absolute truth.
+
+\textbf{Conclusion 5}: The universal necessity of ``2 must be prime'' can be challenged; foundation replacement does not contradict the classical system and is another admissible perspective.
+
+\subsection{Explicit statement of logical dependence}
+The core argument (\S1--\S4) is independent of the consistency of Molt. The example in \S5 depends on the consistency of Molt (unproven). If Molt is inconsistent: \S1--\S4 still hold, the \S5 example fails, but the logical possibility of alternatives remains. If Molt is consistent: the full case holds.
+
+\section{Synthesis}
+
+\begin{tabular}{lll}
+\toprule
+Item & Mathematical fact & Conclusion \\
+\midrule
+1 & G\"odel first incompleteness & ``Unique truth foundation'' fails \\
+2 & G\"odel second incompleteness & ``Absolutely correct'' has no in-system basis \\
+3 & Tarski undefinability & ``Classical as truth standard'' fails \\
+4 & Independence & ``Unique classical'' is logically untenable \\
+5 & Definition relativity & ``2 must be prime everywhere'' can be challenged \\
+\bottomrule
+\end{tabular}
+
+Rigorous conclusion: Without claiming PA/ZFC inconsistent or denying that ``2 is prime'' is a theorem classically, we have used established theorems to argue that the classical system cannot be defended as the ``only correct'' foundation; the universal necessity of ``2 must be prime'' does not hold; foundation replacement is logically legitimate. Strong conclusion: Anyone who upholds the above dogmas must respond logically to G\"odel, Tarski, and definition-relativity; if they cannot, the dogmas are undermined at the root.
+
+\section{Anticipated Objections and Replies}
+
+\textbf{Objection 1}: ``This is just word-play; you redefined prime.''\\
+\textbf{Reply}: Definitions are central to mathematical construction; what matters is consistency and new insight. $\mathbb{P}_\mathcal{M}$ in Molt is coherent under its axioms.
+
+\textbf{Objection 2}: ``Molt is just a model of the classical system.''\\
+\textbf{Reply}: If it is a model, then the classical system allows multiple ``prime'' interpretations; if not equivalent, then there exist inequivalent consistent systems. In both cases ``classical uniqueness'' is undermined.
+
+\textbf{Objection 3}: ``The mathematical community will not accept this.''\\
+\textbf{Reply}: Logical legitimacy does not depend on sociological acceptance; we argue for the logical legitimacy of foundation pluralism, not for replacing the classical system.
+
+\textbf{Objection 4}: ``If Molt is inconsistent, the argument collapses.''\\
+\textbf{Reply}: It does not. \S1--\S4 are fully independent of Molt; failure of the example does not imply ``classical uniqueness''; the logical possibility remains open.
+
+\section{Logical Status of Foundation Replacement and the Place of Molt}
+
+\textbf{7.1 Compatibility and coexistence}: If both Molt and the classical system are consistent, they can coexist; this paper does not advocate replacing the classical system but presents an alternative perspective.
+
+\textbf{7.2 Relation to the classical system}: The two may be equivalent, Molt may be stronger, or independent; in each case foundation replacement remains legitimate.
+
+\textbf{7.3 Consistency status}: The consistency of Molt is unproven; Lean~4 formalization has been completed (no circularity, no known contradiction); a consistency proof remains to be done. The core argument does not depend on it.
+
+\textbf{7.4 Evaluation}: By consistency, new insight, degree of formalization, and translatability. The aim is to explore foundation pluralism, not to overturn the classical system.
+
+\section{Correspondence with the RiemannObserver Project}
+
+\textbf{8.1 Formalization status}: The \texttt{formal/} directory (Lean~4) contains the axioms and core derivations; a consistency proof, formalization of major results, and clarification of the relation to the classical system remain.
+
+\textbf{8.2 Role of this document}: The core argument (\S1--\S4) is independent of the success or failure of Molt; the example (\S5) depends on Molt's consistency; the philosophical conclusions (\S6) hold even if Molt is never completed. Even if Molt were proved inconsistent, this document would still be a serious argument against ``foundation uniqueness.''
+
+\vspace{1em}
+\noindent\textbf{Sources and revision history.} Theoretical basis: G\"odel (1931), Tarski (1936), Cohen (1963), standard metamathematics references. Stance: rigorous, transparent, illusion-free, evidence-based challenge to dogma. Revisions: first version $\to$ first round (clarify what is challenged) $\to$ second round (logical dependence) $\to$ third round (\S2.2 transparency, \S4.2 strengthening, \S6.5 anticipated objections, \S7--8 refined). Passed three rounds of strict logical review. Honesty statement: \S1--\S4 independent of Molt's fate; \S5 depends on Molt's consistency (unproven); even if Molt is inconsistent, the ``classical not unique'' conclusion still holds.
+
+\end{document}
