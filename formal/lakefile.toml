@@ -1,0 +1,6 @@
+name = "RiemannObserver"
+defaultTargets = ["RiemannObserver"]
+
+[[lean_lib]]
+name = "RiemannObserver"
+srcDir = "."
